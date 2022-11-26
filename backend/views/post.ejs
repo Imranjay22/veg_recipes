@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <link href="/css/post.css" rel="stylesheet" type="text/css">
+    <style>
+
+      
+    </style>
+</head>
+<body>
+    <header>
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        <div class="logo">
+             Kushwaha's Veg Recipes
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/post/newpost">New Post</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Login</a></li>
+            
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="post">
+      
+        <div class="title">
+            <h2><%= recipe.title %></h2>
+        </div>
+        <div class="desc">
+            <p><%= recipe.description %></p>
+        </div>
+        <div class="author">
+            <h5>By <span style="color: green;">Ranjay Pratap</span> </h5>
+        </div>
+        <div class="content">
+            <p><%- recipe.content %></p>
+        </div>
+    </div>
+
+</body>
+</html>

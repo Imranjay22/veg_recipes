@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  
+ 
+  border: 1px solid rgb(215, 226, 230);
+  flex-direction: column;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 40px;
+  color: rgb(33, 184, 33);
+  
+}
+
+header .logo{
+  font-weight: bold;
+  font-size: 30px;
+
+
+  width: 180px;
+  margin: auto;
+  
+
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ margin-top: 20px;
+}
+
+
+
+header .nav li a{
+  text-decoration: none;
+  color: rgb(33, 184, 33);
+  font-weight: bolder;
+  
+
+
+  padding: 16px 8px;
+ 
+  
+}
+
+header li a:hover{
+  color: white;
+  background-color: green;
+
+}
+.post{
+  width: 70%;
+  margin: auto;
+
+}
+
+.post .title{
+  font-size: 25px;
+}
+.post .desc{
+  font-size: 24px;
+}
+.post .author{
+  font-size: 22px;
+  color: rgb(65, 62, 62);
+}
+
+.post .content{
+  font-size: 20px;
+}

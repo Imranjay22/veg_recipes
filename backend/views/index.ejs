@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty's Cuisine</title>
+ 
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        <div class="logo">
+             Kushwaha's Veg Recipes
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/post/newpost">New Post</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="/user/signup">Sign Up</a></li>
+                <li><a href="/user/login">Login</a></li>
+            
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="top">
+            <div class="title">Recipes By World Cuisine</div>
+            <p>In the mood for a French bistro classic, or perhaps an Indian biryani? Browse our recipes by world cuisine to help nail down just the flavor profile you desire.</p>
+        </div>
+    </div>
+  
+    <div class="recipes">
+        <div class="title">
+            <h1>Recipe Categories....</h1>
+        </div>
+        <div class="row">
+            <% categories.forEach((category)=>{%>
+            <div class="recipe-card">
+                <img src="<%= category.imagePath %>" alt="">
+ 
+                <div class="name"><a href="/category/<%= category._id %>"><%= category.title %></a></div>
+            </div>
+
+            <% }) %>
+        </div>
+    </div>
+
+
+    
+   
+
+    <div class="products">
+        <div class="title">
+            <h1>Popular Recipes...</h1>
+        </div>
+       
+       
+        <% recipes.forEach((recipe) =>{ %>
+        <div class="pro-card">
+            <div class="img">
+                <a href=""><img src="<%= recipe.imagePath %>" alt=""></a>
+            </div>
+            
+            <div class="desc">
+                <p>Recipes By World Cuisine</p>
+                <a href="/recipe/<%= recipe._id %>"><h3><%= recipe.title %></h3></a>
+            <span>By Ranjay Pratap</span>
+            </div>
+           
+            
+        </div>
+        <% }) %>
+       
+    </div>
+
+
+  
+
+    <footer>
+        <h4>Copyright by tasty's cuisine</h4>
+    </footer>
+  
+    
+</body>
+</html>

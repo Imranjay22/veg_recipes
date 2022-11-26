@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  .info{
+    padding: 0 50px;
+
+  }
+  .info h1{
+    font-size: 40px;
+  }
+  .info p{
+    font-size: 22px;
+    margin: 8px 0;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+  .products h1 {
+    text-align: center;
+    display: block;
+  }
+  .products .pro-card {
+    flex-basis: 23%;
+    margin: 20px 10px;
+    border: 1px solid rgb(234, 228, 228);
+  }
+  .pro-card .desc {
+    padding: 8px 20px;
+  }
+  .pro-card .img {
+    height: 250px;
+    background-color: rgb(62, 57, 50);
+    cursor: pointer;
+  }
+  .pro-card p {
+    padding: 10px 0;
+    color: grey;
+  }
+  .pro-card h3 {
+    padding: 4px 0;
+    font-size: 23px;
+  }
+  .pro-card h3:hover {
+    text-decoration: underline;
+    color: rgb(74, 69, 69);
+  }

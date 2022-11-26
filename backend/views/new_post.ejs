@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty's Cuisine</title>
+ 
+    <link href="/css/new_post.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+</head>
+<body>
+    <header>
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        <div class="logo">
+             Kushwaha's Veg Recipes
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">New Post</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Login</a></li>
+            
+            </ul>
+        </div>
+    </header>
+
+
+<div class="container">
+  <form action="/post/create" method="post">
+  <div class="row">
+    <div class="col-25">
+      <label for="title">Recipe Title</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="title" name="title" placeholder="title...">
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-25">
+      <label for="imagepath">Image Path</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="title" name="imagePath" placeholder="imagepath...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Category</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="category">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Curry">Curry</option>
+        <option value="Paneer">Paneer</option>
+        <option value="Indian sweets">Indian sweets</option>
+        <option value="Vegitables">Vegitables</option>
+        <option value="Sreets Food">Street Foods</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="desc">Description</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="description" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="content">Content</label>
+    </div>
+    <div class="col-75">
+      <textarea id="content" name="content" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+  
+
+    <footer>
+        <h4>Copyright by tasty's cuisine</h4>
+    </footer>
+
+    <script>
+      CKEDITOR.replace( 'content');
+  </script>
+  
+    
+</body>
+</html>
